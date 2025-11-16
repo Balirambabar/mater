@@ -1,0 +1,14 @@
+1)IOC Container responsible to manage spring Beans
+we can call ioc container 2 ways
+1)BeanFactory-outdated
+2)ApplicationContext
+==============================
+2)Spring Bean scope
+1)Singleton-default-only one object-eager loading-same object every time
+2)prototype -lazy loading-when we called getBean then only load-diff object
+3)request
+4)session
+===================================
+Autowire
+used to identify dependent object and injecting into target objects
+=========================================
