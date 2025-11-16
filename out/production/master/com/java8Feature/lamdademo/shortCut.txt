@@ -1,0 +1,22 @@
+1)run code fun+shift+f10
+2)debug fun+f8
+Sting Joiner
+optional class
+
+------------------------------
+Collection are used to store data
+Stream API used to process Data- sequence of Element comes from source
+
+create steam
+1)stream.of(e1,e2,e3)
+2)steam() Method
+
+is not data structure ,
+bunch of operation applied on source data,
+source can be array and collection
+
+2 type of operational method
+1)Intermediate-perform operation on stream and return new Stream-filter(),map()
+2)Terminal- will take input and provide output as stream-count()
+--------------------------------------------------------------------------------
+Nashron Engine in java 8

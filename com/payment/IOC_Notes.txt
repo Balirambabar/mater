@@ -1,0 +1,9 @@
+1)
+IOC is a principle which is used
+ to manage and collaborate dependencies among object in the application
+2)Responsible for Dependency Injection
+==========================
+How to start IOC container
+1)BeanFactory(I)(OutDated)
+2)ApplicationContext(I)
+ApplicationContext ctxt=new ClassPathXmlApplicationContext(String xmlFile)
