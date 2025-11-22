@@ -11,4 +11,16 @@ we can call ioc container 2 ways
 ===================================
 Autowire
 used to identify dependent object and injecting into target objects
-=========================================
+Auto wire work on 4 different way
+1)byName
+2)byType
+3)Constructor
+4)None
+---------------------
+How to resolve ambiguity-byType
+primary "true"- highest priority
+autowire-candidate-"false"
+================================
+what is spring Bean?
+class manage by IOC is called as Spring Bean
+==============================================
