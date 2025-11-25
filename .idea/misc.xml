@@ -6,6 +6,11 @@
       <list>
         <option value="$PROJECT_DIR$/SpringApp1/pom.xml" />
         <option value="$PROJECT_DIR$/Projects/SpingApp1/pom.xml" />
+        <option value="$PROJECT_DIR$/Projects/SpringApp2_Antotation/pom.xml" />
+        <option value="$PROJECT_DIR$/Projects/SpringBeanLifeCycle/pom.xml" />
+        <option value="$PROJECT_DIR$/Projects/LombookDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/Projects/SB1/pom.xml" />
+        <option value="$PROJECT_DIR$/Projects/JPA/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
