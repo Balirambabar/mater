@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/Projects/JPA/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Projects/LombookDemo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Projects/LombookDemo/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Projects/SB1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Projects/SpingApp1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Projects/SpingApp1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Projects/SpringApp2_Antotation/src/main/java" charset="UTF-8" />
