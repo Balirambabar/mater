@@ -41,6 +41,12 @@ it will start scanning from current package
 @Data-lom book
 @Id-primary
 @Column-
+@Query()-JPA
+@CreationTimestamp()
+@UpdateTimestamp()
+@GeneratedValue-primary key
+@Embeddable----class all variable primary key
+@EmbeddedId--variable level
 =====================
 programmatic
 InitializingBean
@@ -96,6 +102,35 @@ spring.datasource.password=springpass
 
 spring.datasource.username=root
 spring.datasource.password=Balram@1648
+====================================================
+nativeQuery
+@Query(value="select * from book" nativeQuery=true)
+pulic List<Query> getAllbook();
+HQL Query
+@Query(value="from book")
+pulic List<Query> getAllbook();
+====================================================
+Pagination
+int pageNo=1;
+PageRequest<Book> page=PageRequest.of(pageNo-1,3);
+Page<Book> findAlldata=repo.findAll(page);
+List<Book> books=findAlldata.getContent();
+====================================================
+Query by Example
+it is used to prepare dynamic query based on data available in entity class obj
+Employee emp=new Employee();
+e.setEmpGender("Male");
+Example<Book> example=Example.of(emp);
+List<Book> books=repro.findAll(example);
+================================================
+TimeStamping
+used to create date and updated date
+=========================================
+application.properties
+spring.profile.active=dev
+application-dev.properties
+=========================================================
+Sonatype Nexus Repository Managar
 
 
 
