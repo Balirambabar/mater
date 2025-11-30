@@ -131,8 +131,6 @@ spring.profile.active=dev
 application-dev.properties
 =========================================================
 Sonatype Nexus Repository Managar
-===============================
-necessary code
 
 
 
