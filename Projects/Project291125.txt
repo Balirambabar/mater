@@ -1,0 +1,36 @@
+Maven is build tool
+Git is version control software
+==================================
+Maven ha 3 repository
+1)Central-maven
+2)Local-m2
+3)Remote
+
+<repositories>
+   <repository>
+      <id>nexus</id>
+      <url>http://ip address:port/repo/jaybabai/</url>
+   </repository>
+</repositories>
+
+<dependency>
+   <dependencies>
+     <groupId>in.jaybabai</groupId>
+     <artifactId>pwd-util</artifactId>
+      <version>1.0</version>
+   </dependencies>
+ <dependency>
+ ====================
+ setting.xml
+ <server>
+ </server>
+ ----------------
+ <mirror>
+ </mirror>
+ ===================
+ POM.xml
+ Project object model
+ ============================================================================
+ Git Command
+ git config --global user.name "baliram"
+ git config --global user.email "balirambabar93@gmail.com"
