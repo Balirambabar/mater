@@ -31,6 +31,35 @@ Maven ha 3 repository
  POM.xml
  Project object model
  ============================================================================
- Git Command
- git config --global user.name "baliram"
- git config --global user.email "balirambabar93@gmail.com"
+ Git
+
+ Sonatype Nexus Repository Managar
+ ---------------------------
+1)git help
+2)git init
+3)git config --global user.name "baliram"
+4)git config --global user.email "balirambabar93@gmail.com"
+5)git add . --move to stage area
+6)git commit -m 'initial commit'
+7)git push
+8)git restore
+9)git status
+10)git branch
+11)git clone
+12)git fetch --remote to local repro but not working tree
+13)git pull --directly move changes remote to working tree
+14)git stash --store working data to temp location
+15)git stash apply -restore
+16)git checkout --switch one branch to other branch
+------------------------------------------------
+ current branch to main branch moved code
+ 17)git pull -UI
+ 18)git merge develop--preserve  commit history
+ 19)git rebase-will not preserve  commit history
+ 20)git log
+ 21)git rm
+ 22)git revert
+ 23)git tag
+ ==================
+
+
