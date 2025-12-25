@@ -13,13 +13,14 @@
         <module name="SpingApp1" />
         <module name="SpringBeanLifeCycle" />
       </profile>
-      <profile name="Annotation profile for JPA" enabled="true">
+      <profile name="Annotation profile for Insurance" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
+        <module name="Insurance" />
         <module name="JPA" />
       </profile>
     </annotationProcessing>
@@ -29,6 +30,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Insurance" options="-parameters" />
       <module name="JPA" options="-parameters" />
       <module name="SB1" options="-parameters" />
     </option>

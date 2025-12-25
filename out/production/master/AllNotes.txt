@@ -36,6 +36,17 @@ it will start scanning from current package
 @Primary()-to give priority fot the bean for autowiring
 @PostConstruct()-like init()
 @preDestroy()-like destroy()
+@Table-table name
+@Entity-mapped to table
+@Data-lom book
+@Id-primary
+@Column-
+@Query()-JPA
+@CreationTimestamp()
+@UpdateTimestamp()
+@GeneratedValue-primary key
+@Embeddable----class all variable primary key
+@EmbeddedId--variable level
 =====================
 programmatic
 InitializingBean
@@ -49,3 +60,74 @@ Generate below things in class
 Spring boot advantage
 1)starter pom
 2)Auto Configuration
+==================
+Actuators(Monitor and manage our application)
+how many bean loaded
+url -pattern
+health
+heap dump
+thread dump
+=====================
+to start IOC container normal sprig
+ClassPathXmlApplicationContext
+AnnotationConfigApplicationContext
+==================
+Spring boot use
+AnnotationConfigServletWebServerApplicationContext to start IOC container
+==============
+Runner (Functional interface )in spring boot-run() method
+ApplicationRunner(I)
+CommandLineRunner(I)
+====Uses case====only one abstract method
+Load static table data when application started
+delete data from staging table
+send notification reg application start up
+============================================
+Spring Dada JPA-Develop persistance layer-simplifying CURD Operation
+1)JAVA JDBC
+2)Spring JDBC
+3)Hibernate Framework
+4)Spring ORM
+5)Spring Data JPA
+To avoid bolier plat we are going for spring data jpa
+Spring data jpa-->hibernate orm->jdbc-Db
+to simplify Persistence layer development jpa provide RepositoryInterface
+1)CurdRepository-only Curd
+2)JpaRepository=sorting_pagination+QBE+CURD
+=============================
+Spring boot version-2.7.10
+
+spring.datasource.username=springuser
+spring.datasource.password=springpass
+
+spring.datasource.username=root
+spring.datasource.password=Balram@1648
+====================================================
+nativeQuery
+@Query(value="select * from book" nativeQuery=true)
+pulic List<Query> getAllbook();
+HQL Query
+@Query(value="from book")
+pulic List<Query> getAllbook();
+====================================================
+Pagination
+int pageNo=1;
+PageRequest<Book> page=PageRequest.of(pageNo-1,3);
+Page<Book> findAlldata=repo.findAll(page);
+List<Book> books=findAlldata.getContent();
+====================================================
+Query by Example
+it is used to prepare dynamic query based on data available in entity class obj
+Employee emp=new Employee();
+e.setEmpGender("Male");
+Example<Book> example=Example.of(emp);
+List<Book> books=repro.findAll(example);
+================================================
+TimeStamping
+used to create date and updated date
+=========================================
+application.properties
+spring.profile.active=dev
+application-dev.properties
+=========================================================
+

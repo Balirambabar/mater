@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/Projects/LombookDemo/pom.xml" />
         <option value="$PROJECT_DIR$/Projects/SB1/pom.xml" />
         <option value="$PROJECT_DIR$/Projects/JPA/pom.xml" />
+        <option value="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-dependencies/4.0.0/spring-boot-dependencies-4.0.0.pom" />
+        <option value="$PROJECT_DIR$/Projects/Insurance/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

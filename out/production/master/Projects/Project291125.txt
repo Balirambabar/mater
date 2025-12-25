@@ -88,23 +88,4 @@ START_DATE DATETIME,
 END_DATE DATETIME,
 TERMINATION_REASON VARCHAR(25)
 );
-========================
-mvn spring-boot:run-solve white label error
-===============================
-To Generate Excel we need yo use Apache poi dependency
-<dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>5.5.1</version>
-</dependency>
-=======================================
-to generate pdf we need to use dependency
-<dependency>
-            <groupId>com.github.librepdf</groupId>
-            <artifactId>openpdf</artifactId>
-            <version>1.3.26</version>
- </dependency>
-=======================================
-to email we need to use dependency
-appp pass-jlok cspy hyal ucvw
 
