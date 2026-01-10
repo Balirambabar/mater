@@ -90,7 +90,7 @@ Spring Dada JPA-Develop persistance layer-simplifying CURD Operation
 4)Spring ORM
 5)Spring Data JPA
 To avoid bolier plat we are going for spring data jpa
-Spring data jpa-->hibernate orm->jdbc-Db
+Spring data jpahibernate orm->jdbc-Db
 to simplify Persistence layer development jpa provide RepositoryInterface
 1)CurdRepository-only Curd
 2)JpaRepository=sorting_pagination+QBE+CURD
@@ -130,4 +130,5 @@ application.properties
 spring.profile.active=dev
 application-dev.properties
 =========================================================
+C:\Users\Baliram Babar\AppData\Local\Temp
 

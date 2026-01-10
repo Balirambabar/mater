@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Jay Babaji</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .carousel-item img {
+          height: 500px;          /* Bigger banner */
+          object-fit: cover;      /* Fill nicely */
+        }
+        .navbar-brand img {
+          height: 50px;           /* Balanced logo */
+          width: auto;
+        }
+        .card img {
+          height: 300px;          /* Consistent category images */
+          width: auto;
+        }
+         footer {
+    background-color: white;
+    color: black;
+  }
+
+    </style>
+</head>
+<body>
+<div class="container-fluid p-0">
+
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img alt="logo" src="img/jaybabajilogo.jpeg">
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Customer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sweets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ready To Eat</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ghee</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" placeholder="Search" type="search">
+                    <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                    <a class="btn btn-danger" href="/login">Login</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel-->
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleAutoplaying">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="Ready to Eat" class="d-block w-100" src="img/wedddesk.jpeg">
+            </div>
+            <div class="carousel-item">
+                <img alt="Desi Ghee" class="d-block w-100" src="img/HDFC-Banner.jpeg">
+            </div>
+            <div class="carousel-item">
+                <img alt="Beverages" class="d-block w-100" src="img/obdesk.jpeg">
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleAutoplaying"
+                type="button">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleAutoplaying"
+                type="button">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Categories-->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Discover Categories</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img alt="Bhel" class="card-img-top" src="img/lemanb.jpeg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Beverages</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img alt="Goolab Jam" class="card-img-top" src="img/goolab.jpeg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sweets</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img alt="Moong Dal" class="card-img-top" src="img/tilladu.jpeg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Gift Box</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 mt-5">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img alt="Bhel" class="card-img-top" src="img/cookies.jpeg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cookies</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img alt="Goolab Jam" class="card-img-top" src="img/bhel.jpeg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ready to Eat</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img alt="Moong Dal" class="card-img-top" src="img/moongdal.jpeg">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Namkeen</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<!-- Footer-->
+
+<footer class="bg-white text-dark pt-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- About-->
+            <div class="col-md-4">
+                <h5>About Jay Babaji</h5>
+                <p>We bring you authentic sweets, ready-to-eat snacks, and pure desi ghee crafted with tradition.</p>
+            </div>
+
+            <!-- Quick Links-->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-dark text-decoration-none" href="#">Home</a></li>
+                    <li><a class="text-dark text-decoration-none" href="#">Products</a></li>
+                    <li><a class="text-dark text-decoration-none" href="#">Customers</a></li>
+                    <li><a class="text-dark text-decoration-none" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social-->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p>Email: uddhavbabar@gmail.com</p>
+                <p>Phone: +91 8806005306</p>
+                <div>
+                    <a class="text-dark me-3" href="#"><i class="bi bi-facebook"></i></a>
+                    <a class="text-dark me-3" href="#"><i class="bi bi-instagram"></i></a>
+                    <a class="text-dark me-3" href="#"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-dark">
+        <p class="text-center mb-0">&copy; 2025 Jay Babaji. All rights reserved.</p>
+    </div>
+</footer>
+</html>
