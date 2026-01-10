@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Jay Babaji - Glossary Account</title>
+    <!-- CSS linked via Thymeleaf -->
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">JAY BABAJI</span>
+    </div>
+
+    <div class="main-content">
+        <div class="left-section">
+            <h1>Access your glossary account</h1>
+            <!-- SVG illustration -->
+            <svg class="illustration" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+                <!-- Shopping cart -->
+                <rect fill="#333" height="60" rx="5" width="80" x="80" y="320"/>
+                <circle cx="95" cy="395" fill="#333" r="12"/>
+                <circle cx="145" cy="395" fill="#333" r="12"/>
+                <!-- Person -->
+                <circle cx="180" cy="240" fill="#ffc4b0" r="25"/>
+                <rect fill="#ff6b6b" height="70" rx="5" width="50" x="155" y="265"/>
+                <rect fill="#4a4a4a" height="50" width="20" x="155" y="335"/>
+                <rect fill="#4a4a4a" height="50" width="20" x="185" y="335"/>
+                <rect fill="#ff6b6b" height="45" width="15" x="145" y="275"/>
+                <rect fill="#ff6b6b" height="10" width="35" x="195" y="275"/>
+                <!-- Shelves -->
+                <rect fill="#ddd" height="8" width="180" x="230" y="200"/>
+                <rect fill="#ddd" height="8" width="180" x="230" y="260"/>
+                <rect fill="#ddd" height="8" width="180" x="230" y="320"/>
+                <!-- Products -->
+                <rect fill="#ff6b6b" height="35" width="25" x="240" y="165"/>
+                <rect fill="#ff6b6b" height="35" width="25" x="270" y="165"/>
+                <rect fill="#ff6b6b" height="35" width="25" x="300" y="165"/>
+                <rect fill="#4a4a4a" height="25" width="25" x="270" y="175"/>
+                <rect fill="#4a4a4a" height="25" width="25" x="330" y="175"/>
+                <rect fill="#ff6b6b" height="35" width="50" x="350" y="225"/>
+                <rect fill="#ddd" height="35" width="20" x="240" y="285"/>
+                <rect fill="#ddd" height="35" width="20" x="265" y="285"/>
+                <rect fill="#ddd" height="35" width="20" x="290" y="285"/>
+                <rect fill="#ddd" height="35" width="20" x="315" y="285"/>
+                <rect fill="#ddd" height="35" width="20" x="340" y="285"/>
+                <rect fill="#ddd" height="35" width="20" x="365" y="285"/>
+                <!-- Freezer -->
+                <rect fill="#4a4a4a" height="140" rx="5" width="70" x="420" y="200"/>
+                <rect fill="#ddd" height="25" width="60" x="425" y="205"/>
+                <text fill="#333" font-size="10" text-anchor="middle" x="455" y="222">FROZEN</text>
+                <rect fill="#7dd3c0" height="30" width="25" x="430" y="240"/>
+                <rect fill="#ddd" height="30" width="25" x="460" y="240"/>
+                <rect fill="#ff6b6b" height="25" width="25" x="430" y="275"/>
+                <rect fill="#ddd" height="25" width="25" x="460" y="275"/>
+                <circle cx="445" cy="315" fill="#ff6b6b" r="12"/>
+                <circle cx="470" cy="315" fill="#ff6b6b" r="12"/>
+                <!-- Cart items -->
+                <rect fill="#ff6b6b" height="25" width="15" x="90" y="340"/>
+                <rect fill="#ddd" height="25" width="15" x="110" y="340"/>
+                <rect fill="#4a4a4a" height="25" width="15" x="130" y="340"/>
+                <!-- Floor items -->
+                <rect fill="#ff6b6b" height="45" width="35" x="350" y="340"/>
+                <rect fill="#4a4a4a" height="40" width="30" x="390" y="345"/>
+            </svg>
+        </div>
+
+        <div class="right-section">
+            <div class="right-logo"></div>
+            <p class="welcome-text">Welcome back! Log in to continue<br>exploring definitions.</p>
+
+            <!-- Thymeleaf form binding -->
+            <form class="login-form" method="post" th:action="@{/login}" th:object="${user}">
+                <div class="form-group">
+                    <input placeholder="User ID" required th:field="*{username}" type="text"/>
+                </div>
+                <div class="form-group">
+                    <input placeholder="Password" required th:field="*{password}" type="password"/>
+                </div>
+                <button class="login-btn" type="submit">Log</button>
+                <div class="forgot-password">
+                    <a th:href="@{/forgot-password}">Forgot Password?</a>
+                </div>
+
+                <div class="signup-section">
+                    <p>Don't have an account?</p>
+                    <button class="create-account-btn" th:onclick="|window.location='@{/signup}'|"
+                            type="button">Create New Account
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

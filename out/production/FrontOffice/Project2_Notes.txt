@@ -1,0 +1,49 @@
+<div class="row">
+</div>
+when we write above line it will create 12 column in single row
+==========================================================================
+Receovery code-RYAVEQN2J4W7UH4H2Q86JZ45
+=================================
+curl 'https://verify.twilio.com/v2/Services/VA3016a5d9806f0d16d4067f8ab0ec1d58/Verifications' -X POST \
+--data-urlencode 'To=+918007008633' \
+--data-urlencode 'Channel=sms' \
+-u AC7fe6480a118f31d7685d3817774c07bf:[AuthToken]
+=============================================================================
+
+  "account_sid": "AC7fe6480a118f31d7685d3817774c07bf",
+  "amount": null,
+  "channel": "sms",
+  "date_created": "2025-12-28T08:27:18Z",
+  "date_updated": "2025-12-28T08:27:18Z",
+  "lookup": {
+    "carrier": null
+  },
+  "payee": null,
+  "send_code_attempts": [
+    {
+      "attempt_sid": "VLf49c81f394669f580476c8ed9ee9e2db",
+      "channel": "sms",
+      "time": "2025-12-28T08:27:18.694Z"
+    }
+  ],
+  "service_sid": "VA3016a5d9806f0d16d4067f8ab0ec1d58",
+  "sid": "VE2d70929856870ad444d4167532fb2f03",
+  "status": "pending",
+  "to": "+918007008633",
+  "url": "https://verify.twilio.com/v2/Services/VA3016a5d9806f0d16d4067f8ab0ec1d58/Verifications/VE2d70929856870ad444d4167532fb2f03",
+  "valid": false
+}
+===============================================
+Verify Service SID=VA3016a5d9806f0d16d4067f8ab0ec1d58
+name=Shivangan
+======================================
+@GeneratedValue(strategy = GenerationType.IDENTITY) -MySQL, SQL Server-NOT GOOD FOR BATCH-INSERT->DB GENERATED VALUE
+@GeneratedValue(strategy = GenerationType.SEQUENCE)-ORACLE-GOOD FOR BATCH-GET VALUE FROM SEQUENCE->INSERT
+=================================================
+cascade = CascadeType.ALL
+parent child relationship
+==================================================
+
+
+
+

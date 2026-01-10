@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
@@ -8,8 +8,8 @@
     <bean id="payment" class="com.jaybabaji.CreditCardPayment"/>
     <bean id="payments" class="com.jaybabaji.PaymentService" autowire="byName">
     </bean>
-   <!-- <bean id="payment" class="com.jaybabaji.PaymentService" scope="prototype">
-        <constructor injection <constructor-arg name="payment" ref="credit"/>
-      <setter injection <property name="payment" ref="Gpay" />
-    </bean> -->
-</beans>
+    <!-- <bean id="payment" class="com.jaybabaji.PaymentService" scope="prototype">
+         <constructor injection <constructor-arg name="payment" ref="credit"/>
+       <setter injection <property name="payment" ref="Gpay" />
+     </bean>
+ </beans>
