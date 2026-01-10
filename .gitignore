@@ -1,2 +1,13 @@
 /out/production/master/03-IOC-APP/.idea/.gitignore
 /out/production/master/.gitignore
+/out/
+*.class
+
+# Ignore compiled output directory
+out/production/
+
+# Ignore all .env or config files with secrets
+*.env
+*.properties
+/Projects/FrontOffice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/Projects/FrontOffice/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
