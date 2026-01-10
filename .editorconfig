@@ -371,15 +371,3 @@ ij_http-request_call_parameters_wrap = normal
 ij_http-request_method_parameters_wrap = split_into_lines
 ij_http-request_space_before_comma = true
 ij_http-request_spaces_around_assignment_operators = true
-
-# Ignore notes file that contained secrets
-Projects/FrontOffice/src/main/resources/Project2_Notes.txt
-
-# Ignore compiled output directory
-out/production/
-
-# Ignore all .env or config files with secrets
-*.env
-*.properties
-/Projects/FrontOffice/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
-/Projects/FrontOffice/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
