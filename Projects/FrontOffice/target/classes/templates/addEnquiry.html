@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Front Office Enquiry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+    <div class="card shadow mx-auto" style="max-width:600px;">
+        <div class="card-body">
+            <h3 class="text-center mb-4">Front Office Enquiry</h3>
+            <form action="/saveEnquiry" method="post">
+                <!-- Name-->
+                <div class="mb-3">
+                    <label class="form-label" for="name">Full Name</label>
+                    <input class="form-control" id="name" name="name" required type="text">
+                </div>
+                <!-- Mobile-->
+                <div class="mb-3">
+                    <label class="form-label" for="mobile">Mobile Number</label>
+                    <input class="form-control" id="mobile" name="mobile" required type="tel">
+                </div>
+                <!-- Email-->
+                <div class="mb-3">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" id="email" name="email" type="email">
+                </div>
+                <!-- Course / Service-->
+                <div class="mb-3">
+                    <label class="form-label" for="course">Interested In</label>
+                    <select class="form-select" id="course" name="course">
+                        <option value="Java">Java</option>
+                        <option value="Spring Boot">Spring Boot</option>
+                        <option value="Web Development">Web Development</option>
+                    </select>
+                </div>
+                <!-- Status-->
+                <div class="mb-3">
+                    <label class="form-label" for="status">Status</label>
+                    <select class="form-select" id="status" name="status">
+                        <option value="NEW">New</option>
+                        <option value="ENROLLED">Enrolled</option>
+                        <option value="LOST">Lost</option>
+                    </select>
+                </div>
+                <!-- Notes-->
+                <div class="mb-3">
+                    <label class="form-label" for="notes">Notes</label>
+                    <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+                </div>
+                <!-- Submit-->
+                <button class="btn btn-primary w-100" type="submit">Submit Enquiry</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
